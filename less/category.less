@@ -1,0 +1,92 @@
+// 引入初始化公共样式
+@import 'base.less';
+
+// 头部样式
+#header {
+    background-color: #f8f8f8;
+}
+
+body {
+    padding: 45px 0 50px 0;
+    height: 100vh;
+}
+
+// 分类主体样式
+#main {
+    display: flex;
+    height: 100%;
+    // 分类左侧
+    .category-left {
+        width: 85px;
+        height: 100%;
+        .swiper-slide {
+            height: auto;
+        }
+        ul {
+            width: 100%;
+            li {
+                width: 100%;
+                a {
+                    display: block;
+                    width: 100%;
+                    height: 46px;
+                    line-height: 46px;
+                    text-align: center;
+                    color: #666;
+                    background-color: #f8f8f8;
+                }
+                &.active {
+                    a {
+                        color: @main-color;
+                        background-color: #fff;
+                    }
+                }
+            }
+        }
+    }
+    // 分类右侧
+    .category-right {
+        flex: 1;
+        .swiper-slide {
+            height: auto;
+        }
+        // 分类右侧标题
+        .category-title {
+            h4 {
+                padding: 10px;
+                font-weight: 700;
+            }
+        }
+        // 分类右侧内容
+        .category-content {
+            ul {
+                display: flex;
+                flex-wrap: wrap;
+                padding: 10px;
+                li {
+                    width: 33.33%;
+                    margin-bottom: 5px;
+                    a {
+                        display: block;
+                        text-align: center;
+                        img {
+                            width: 70px;
+                        }
+                        span {
+                            display: block;
+                            padding: 5px 0;
+                        }
+                    }
+                }
+            }
+        }
+        // 滚动条样式
+        .swiper-scrollbar {
+            width: 3px;
+            .swiper-scrollbar-drag {
+                background-color: #999;
+            }
+        }
+        
+    }
+}

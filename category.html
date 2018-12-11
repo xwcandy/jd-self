@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- 设置视口和屏幕一样大 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>京东-分类页</title>
+
+    <!-- 引入swiper的css文件 -->
+    <link rel="stylesheet" href="lib/swiper/css/swiper.min.css">
+    <!-- 引入category.less文件 一定要记得加 /less-->
+    <link rel="stylesheet/less" href="less/category.less">
+    <!-- 引入less编译器文件 -->
+    <script src='lib/less/less.js'></script>
+
+</head>
+
+<body>
+    <!-- 头部区域 -->
+    <header id="header">
+        <a href="#" class='icon-back'></a>
+        <form action="#">
+            <i class='icon-search'></i>
+            <input type="search" class='search' placeholder='请输入要搜索的商品'>
+        </form>
+        <a href="#" class='icon-menu'></a>
+    </header>
+
+    <!-- 分类主体区域 -->
+    <main id="main">
+        <!-- 分类左侧 -->
+        <!-- 左侧大容器 设置高度100%和body一样高 body设置了100vh 和屏幕一样高 并且设置超出隐藏-->
+        <div class="swiper-container category-left">
+            <!-- 放内容的容器 盒子移动来显示下面的内容 -->
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <ul>
+                        <li class="active"><a href="#">热门推荐</a></li>
+                        <li><a href="#">手机数码</a></li>
+                        <li class=""><a href="#">家用电器</a></li>
+                        <li><a href="#">电脑办公</a></li>
+                        <li><a href="#">计生情趣</a></li>
+                        <li><a href="#">美妆护肤</a></li>
+                        <li><a href="#">个护清洁</a></li>
+                        <li><a href="#">汽车用品</a></li>
+                        <li><a href="#">京东超市</a></li>
+                        <li><a href="#">男装</a></li>
+                        <li><a href="#">男鞋</a></li>
+                        <li><a href="#">女装</a></li>
+                        <li><a href="#">女鞋</a></li>
+                        <li><a href="#">母婴童装</a></li>
+                        <li><a href="#">运动户外</a></li>
+                        <li><a href="#">内衣配饰</a></li>
+                        <li><a href="#">食品生鲜</a></li>
+                        <li class=""><a href="#">酒水饮料</a></li>
+                        <li class=""><a href="#">家具家装</a></li>
+                        <li><a href="#">家居厨具</a></li>
+                        <li><a href="#">箱包手袋</a></li>
+                        <li class=""><a href="#">钟表珠宝</a></li>
+                        <li><a href="#">图书音像</a></li>
+                        <li><a href="#">玩具乐器</a></li>
+                        <li><a href="#">医药保健</a></li>
+                        <li><a href="#">宠物生活</a></li>
+                        <li><a href="#">礼品鲜花</a></li>
+                        <li class=""><a href="#">农资绿植</a></li>
+                        <li><a href="#">生活旅行</a></li>
+                        <li class=""><a href="#">奢侈品</a></li>
+                        <li><a href="#">全球购</a></li>
+                        <li><a href="#">国际名牌</a></li>
+                        <li><a href="#">艺术邮币</a></li>
+                        <li><a href="#">二手商品</a></li>
+                        <li><a href="#">特产馆</a></li>
+                        <li><a href="#">京东金融</a></li>
+                        <li><a href="#">拍卖</a></li>
+                        <li><a href="#">房产</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- 分类右侧 -->
+        <div class="swiper-container category-right">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <!-- 分类标题 -->
+                    <div class="category-title">
+                        <h4>热门分类</h4>
+                    </div>
+                    <!-- 分类内容 -->
+                    <div class="category-content">
+                        <ul>
+                            <li><a href="#"><img src="images/cate1.jpg" alt=""><span>空调扇</span></a></li>
+                            <li><a href="#"><img src="images/cate2.png" alt=""><span>鱼竿</span></a></li>
+                            <li><a href="#"><img src="images/cate3.png" alt=""><span>剃须刀</span></a></li>
+                            <li><a href="#"><img src="images/cate4.jpg" alt=""><span>男鞋</span></a></li>
+                            <li><a href="#"><img src="images/cate5.png" alt=""><span>微波炉</span></a></li>
+                            <li><a href="#"><img src="images/cate6.jpg" alt=""><span>瑜伽垫</span></a></li>
+                            <li><a href="#"><img src="images/cate7.png" alt=""><span>充电宝</span></a></li>
+                            <li><a href="#"><img src="images/cate8.png" alt=""><span>耳机</span></a></li>
+                            <li><a href="#"><img src="images/cate8.png" alt=""><span>耳机</span></a></li>
+                            <li><a href="#"><img src="images/cate8.png" alt=""><span>耳机</span></a></li>
+                            <li><a href="#"><img src="images/cate8.png" alt=""><span>耳机</span></a></li>
+                            <li><a href="#"><img src="images/cate8.png" alt=""><span>耳机</span></a></li>
+                        </ul>
+
+                    </div>
+                    <!-- 分类标题 -->
+                    <div class="category-title">
+                        <h4>手机数码</h4>
+                    </div>
+                    <!-- 分类内容 -->
+                    <div class="category-content">
+                        <ul>
+                            <li><a href="#"><img src="images/cate1.jpg" alt=""><span>空调扇</span></a></li>
+                            <li><a href="#"><img src="images/cate2.png" alt=""><span>鱼竿</span></a></li>
+                            <li><a href="#"><img src="images/cate3.png" alt=""><span>剃须刀</span></a></li>
+                            <li><a href="#"><img src="images/cate4.jpg" alt=""><span>男鞋</span></a></li>
+                            <li><a href="#"><img src="images/cate5.png" alt=""><span>微波炉</span></a></li>
+                            <li><a href="#"><img src="images/cate6.jpg" alt=""><span>瑜伽垫</span></a></li>
+                            <li><a href="#"><img src="images/cate7.png" alt=""><span>充电宝</span></a></li>
+                            <li><a href="#"><img src="images/cate8.png" alt=""><span>耳机</span></a></li>
+                            <li><a href="#"><img src="images/cate8.png" alt=""><span>耳机</span></a></li>
+                            <li><a href="#"><img src="images/cate8.png" alt=""><span>耳机</span></a></li>
+                            <li><a href="#"><img src="images/cate8.png" alt=""><span>耳机</span></a></li>
+                            <li><a href="#"><img src="images/cate8.png" alt=""><span>耳机</span></a></li>
+                        </ul>
+
+                    </div>
+                    <!-- 分类标题 -->
+                    <div class="category-title">
+                        <h4>家用电器</h4>
+                    </div>
+                    <!-- 分类内容 -->
+                    <div class="category-content">
+                        <ul>
+                            <li><a href="#"><img src="images/cate1.jpg" alt=""><span>空调扇</span></a></li>
+                            <li><a href="#"><img src="images/cate2.png" alt=""><span>鱼竿</span></a></li>
+                            <li><a href="#"><img src="images/cate3.png" alt=""><span>剃须刀</span></a></li>
+                            <li><a href="#"><img src="images/cate4.jpg" alt=""><span>男鞋</span></a></li>
+                            <li><a href="#"><img src="images/cate5.png" alt=""><span>微波炉</span></a></li>
+                            <li><a href="#"><img src="images/cate6.jpg" alt=""><span>瑜伽垫</span></a></li>
+                            <li><a href="#"><img src="images/cate7.png" alt=""><span>充电宝</span></a></li>
+                            <li><a href="#"><img src="images/cate8.png" alt=""><span>耳机</span></a></li>
+                            <li><a href="#"><img src="images/cate8.png" alt=""><span>耳机</span></a></li>
+                            <li><a href="#"><img src="images/cate8.png" alt=""><span>耳机</span></a></li>
+                            <li><a href="#"><img src="images/cate8.png" alt=""><span>耳机</span></a></li>
+                            <li><a href="#"><img src="images/cate8.png" alt=""><span>耳机</span></a></li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+            <!-- 添加滚动条 -->
+            <div class="swiper-scrollbar"></div>
+        </div>
+
+    </main>
+
+    <!-- 底部区域 -->
+    <footer id="footer">
+        <ul>
+            <li><a href="index.html"><img src="https://m.360buyimg.com/mobilecms/jfs/t15145/137/2502885754/3106/de5e0b14/5aa10cd2N46f18ce6.png"
+                        alt=""></a></li>
+            <li><a href="category.index"><img src="https://m.360buyimg.com/mobilecms/jfs/t19183/49/696491919/3763/dec8cceb/5aa10cdbNa9cd0320.png"
+                        alt=""></a></li>
+            <li><a href="#"><img src="https://m.360buyimg.com/mobilecms/jfs/t18583/69/717127328/4407/5e47882b/5aa10ceaN649eec12.png"
+                        alt=""></a> </li>
+            <li><a href="#"><img src="https://m.360buyimg.com/mobilecms/jfs/t17782/11/2358895717/4684/ad19de7f/5af43af1N04ef5a16.png"
+                        alt=""></a></li>
+        </ul>
+    </footer>
+
+    <!-- 引入zepto的js文件 -->
+    <script src='lib/zepto/zepto.min.js'></script>
+    <!-- 引入swiper的js文件 -->
+    <script src='lib/swiper/js/swiper.min.js'></script>
+    <!-- 引入category分类页的js文件 -->
+    <!-- <script src='js/category.js'></script> -->
+    <script src='js/category-zepto.js'></script>
+</body>
+
+</html>
+
+<script>
+    
+</script>

@@ -1,0 +1,140 @@
+//引入初始化样式
+@import "base.less";
+
+
+//轮播图样式
+#slide {
+    width: 100vw;
+    a{
+        img {
+        width: 100%;
+        }
+    }
+}
+
+//导航区域样式
+#nav {
+    padding: 10px 0;
+    >ul {
+        display: flex;
+        flex-wrap: wrap;
+        >li {
+            flex: 25%;
+            >a {
+                display: block;
+                text-align: center;
+                >img {
+                    width: 40px;
+                    height: 40px;
+               }
+               >p {
+                   margin: 5px 0;
+               }
+            }
+            
+        }
+    }
+}
+
+//商品主体区域样式
+#products {
+    padding: 10px 0 50px 0;
+    //京东秒杀区样式
+    #jd-seckill {
+        //秒杀标题
+        .seckill-title {
+            display: flex;
+            position: relative;
+            .seckill-icon {
+                width: 20px;
+                height: 25px;
+                margin-left: 10px;
+            }
+            .seckill-name {
+                margin-left: 10px;
+                color: @main-color;
+            }
+            .seckill-time {
+                margin-left: 5px;
+                span{
+                    display: inline-block;
+                    &:not(:nth-child(3n)) {
+                        width: 15px;
+                        height: 15px;
+                        line-height: 15px;
+                        text-align: center;
+                        background-color: #000;
+                        color: #fff;
+                    }
+                }
+            }
+            .seckill-more {
+                position: absolute;
+                right: 10px;
+                top: 0;
+                &::after {
+                    content: '>';
+                }
+            }
+        }
+        //秒杀内容
+        .seckill-content {
+            padding: 10px 0;
+            >ul {
+                display: flex;
+                li {
+                    width: 33.33%;
+                    text-align: center;
+                    >a {
+                        display: block;
+                        text-align: center;
+                        img {
+                            width: 110px;
+                        }
+                    }
+                    p {
+                       color: @main-color;     
+                    }
+                }
+            }
+        }
+    }
+    //京东超市区样式
+    #jd-market {
+        //京东超市标题
+        .jd-market-title {
+            padding: 5px 30px;
+            position: relative;
+            &::before {
+                content: '';
+                position: absolute;
+                left: 20px;
+                top: 9px;
+                width: 4px;
+                height: 14px;
+                background-color: @main-color;
+            }
+        }
+        //京东超市内容
+        .jd-market-content {
+            display: flex;
+            .left {
+                width: 50%;
+                >a {
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+            .right {
+                width: 50%;
+                >a {
+                    img {
+                    width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
